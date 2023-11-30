@@ -4,8 +4,8 @@
   "description": "Learning node, express and mongodb",
   "main": "app.js",
   "scripts": {
-    "start:dev": "SET NODE_ENV=development && nodemon server.js",
-    "start:prod": "SET NODE_ENV=production && nodemon server.js",
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yash Govani",
@@ -27,5 +27,8 @@
     "eslint-plugin-react": "^7.33.2",
     "nodemon": "^3.0.1",
     "prettier": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }

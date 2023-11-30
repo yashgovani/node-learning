@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
+// eslint-disable-next-line import/newline-after-import
 const dotenv = require('dotenv');
-const app = require('./app');
-
 dotenv.config({ path: './config.env' });
+const app = require('./app');
 
 const DB = process.env.DATABASE.replace(
   '<PASSWORD>',
