@@ -4,6 +4,7 @@
   "rules": {
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "spaced-comment": "off",
+    "arrow-body-style": "off",
     "no-console": "warn",
     "consistent-return": "off",
     "func-names": "off",
