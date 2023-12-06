@@ -16,6 +16,18 @@
     "class-methods-use-this": "off",
     "prefer-arrow-callback": "off",
     "prefer-destructuring": ["error", { "object": true, "array": false }],
-    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val|err" }]
+    "no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "req|res|next|val|err" }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false,
+        "packageDir": ["./"]
+      }
+    ]
   }
 }
